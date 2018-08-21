@@ -30,7 +30,7 @@ class SessionApi(object):
 
     def __init__(self, api_client=None):
         if api_client is None:
-            api_client = ApiClient()
+            api_client = CloudApiClient()
         self.api_client = api_client
 
     def check_session(self, x_session_id, **kwargs):  # noqa: E501
