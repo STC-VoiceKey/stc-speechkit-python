@@ -17,7 +17,6 @@ from __future__ import absolute_import
 
 # import apis into sdk package
 from cloud_client.api.session_api import SessionApi
-from cloud_client.api.v1_api import V1Api
 
 # import ApiClient
 from cloud_client.cloud_api_client import CloudApiClient

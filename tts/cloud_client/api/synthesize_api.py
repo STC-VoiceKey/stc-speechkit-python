@@ -117,7 +117,7 @@ class SynthesizeApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/Synthesize/languages', 'GET',
+            '/v1/languages', 'GET',
             path_params,
             query_params,
             header_params,
@@ -224,7 +224,7 @@ class SynthesizeApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/Synthesize/synthesize', 'POST',
+            '/v1/synthesize', 'POST',
             path_params,
             query_params,
             header_params,
@@ -323,7 +323,7 @@ class SynthesizeApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/Synthesize/synthesize/sessionless', 'POST',
+            '/v1/synthesize/sessionless', 'POST',
             path_params,
             query_params,
             header_params,
@@ -430,7 +430,7 @@ class SynthesizeApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/Synthesize/languages/{language}/voices', 'GET',
+            '/v1/languages/{language}/voices', 'GET',
             path_params,
             query_params,
             header_params,
@@ -537,7 +537,7 @@ class SynthesizeApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/Synthesize/synthesize/stream', 'POST',
+            '/v1/synthesize/stream', 'POST',
             path_params,
             query_params,
             header_params,
@@ -644,7 +644,7 @@ class SynthesizeApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/Synthesize/synthesize/stream', 'DELETE',
+            '/v1/synthesize/stream', 'DELETE',
             path_params,
             query_params,
             header_params,
