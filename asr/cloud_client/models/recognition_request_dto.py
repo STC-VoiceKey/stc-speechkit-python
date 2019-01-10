@@ -98,12 +98,6 @@ class RecognitionRequestDto(object):
         :param package_id: The package_id of this RecognitionRequestDto.  # noqa: E501
         :type: str
         """
-        allowed_values = ["Package name"]  # noqa: E501
-        if package_id not in allowed_values:
-            raise ValueError(
-                "Invalid value for `package_id` ({0}), must be one of {1}"  # noqa: E501
-                .format(package_id, allowed_values)
-            )
 
         self._package_id = package_id
 
