@@ -15,12 +15,13 @@
 from __future__ import absolute_import
 
 # import models into model package
-from cloud_client.models.audio import Audio
-from cloud_client.models.diarization_param import DiarizationParam
-from cloud_client.models.diarization_response import DiarizationResponse
-from cloud_client.models.diarization_result import DiarizationResult
-from cloud_client.models.exception_model import ExceptionModel
-from cloud_client.models.segment import Segment
-from cloud_client.models.speaker import Speaker
-from cloud_client.models.start_session_request import StartSessionRequest
-from cloud_client.models.start_session_response import StartSessionResponse
+from cloud_client.models.audio_dto import AudioDto
+from cloud_client.models.diarization_response_dto import DiarizationResponseDto
+from cloud_client.models.message_dto import MessageDto
+from cloud_client.models.segment_dto import SegmentDto
+from cloud_client.models.speaker_dto import SpeakerDto
+from cloud_client.models.auth_response_dto import AuthResponseDto
+from cloud_client.models.auth_status_dto import AuthStatusDto
+from cloud_client.models.domain_dto import DomainDto
+from cloud_client.models.module_names_dto import ModuleNamesDto
+from cloud_client.models.auth_request_dto import AuthRequestDto
