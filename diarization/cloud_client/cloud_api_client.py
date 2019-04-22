@@ -20,8 +20,11 @@ import re
 import tempfile
 
 # python 2 and python 3 compatibility library
+from urllib.parse import quote
+
 import six
-from six.moves.urllib.parse import quote
+import six.moves.urllib.parse
+from numpy.core import long
 
 from cloud_client.configuration import Configuration
 import cloud_client.models
@@ -274,7 +277,7 @@ class CloudApiClient(object):
     def call_api(self, resource_path, method,
                  path_params=None, query_params=None, header_params=None,
                  body=None, post_params=None, files=None,
-                 response_type=None, auth_settings=None, async=None,
+                 response_type=None, auth_settings=None, async_=None,
                  _return_http_data_only=None, collection_formats=None,
                  _preload_content=True, _request_timeout=None):
         """Makes the HTTP request (synchronous) and returns deserialized data.
@@ -313,7 +316,7 @@ class CloudApiClient(object):
             If parameter async is False or missing,
             then the method will return the response directly.
         """
-        if not async:
+        if not async_:
             return self.__call_api(resource_path, method,
                                    path_params, query_params, header_params,
                                    body, post_params, files,

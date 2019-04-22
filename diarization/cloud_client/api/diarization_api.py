@@ -39,7 +39,7 @@ class DiarizationApi(object):
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async=True
-        >>> thread = api.diarization(x_session_id, body, async=True)
+        >>> thread = api.diarization(x_session_id, body, async_=True)
         >>> result = thread.get()
 
         :param async bool
@@ -62,7 +62,7 @@ class DiarizationApi(object):
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async=True
-        >>> thread = api.diarization_with_http_info(x_session_id, body, async=True)
+        >>> thread = api.diarization_with_http_info(x_session_id, body, async_=True)
         >>> result = thread.get()
 
         :param async bool
@@ -134,7 +134,7 @@ class DiarizationApi(object):
             files=local_var_files,
             response_type='DiarizationResponseDto',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            async_=params.get('async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
